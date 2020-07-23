@@ -5,8 +5,8 @@ interface INumberDisplayProps{
     value: number;
 }
 
-export function NumberDisplay(props:INumberDisplayProps){
+export const NumberDisplay: React.FC <INumberDisplayProps> = ({ value }) => {
     return(
-        <div className='number-display'>{props.value.toString().padStart(3, '0')}</div>
+        <div className='number-display'>{value.toString().padStart(3, '0')}</div>
     )
 }

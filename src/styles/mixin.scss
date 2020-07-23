@@ -4,9 +4,15 @@
     border-right-color: $right-bottom;
     border-bottom-color: $right-bottom;
     border-left-color: $left-top;
-    border-top-color :$left-top;
+    border-top-color: $left-top;
 }
 
-@mixin button {
-    
+@mixin buttons {
+    &:active{
+        @include borders(#7b7b7b, white);
+        border-right-color: white;
+        border-bottom-color: white;
+        border-left-color: #7b7b7b7b;
+        border-top-color: #7b7b7b7b;
+    }
 }
